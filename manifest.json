@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Yad2 Price Tracker",
+  "version": "1.0",
+  "description": "Shows the price history of ads on Yad2",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.yad2.co.il/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
