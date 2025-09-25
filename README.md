@@ -15,42 +15,7 @@ Price Change Indicators: Displays arrows (↑ ↓ →) next to prices to indicat
 Popup History View: Clicking the arrows opens a popup showing the full price history of each listing.
 
 Architecture Overview
-             ┌───────────────────────────┐
-             │   Yad2 Listings Page      │
-             └─────────────┬────────────┘
-                           │
-                           ▼
-                 ┌─────────────────────┐
-                 │  content.js (Script)│
-                 └─────────┬──────────┘
-                           │
-          ┌────────────────┴─────────────────┐
-          │                                  │
-          ▼                                  ▼
-┌─────────────────────┐           ┌─────────────────────┐
-│  localStorage        │           │  FastAPI Server     │
-│  Stores price history│           │  /update_price/     │
-└─────────┬───────────┘           └─────────┬───────────┘
-          │                                  │
-          ▼                                  │
-┌─────────────────────┐                      │
-│  DOM - Price Arrows │                      │
-│  (↑ ↓ →)            │                      │
-└─────────┬───────────┘                      │
-          │                                  │
-          ▼                                  │
-┌─────────────────────┐                      │
-│  Click Arrow         │                      │
-│  Opens Popup         │                      │
-│  with Price History  │<────────────────────┘
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│  popup.html + popup.js│
-│  Displays all listings │
-│  and price histories   │
-└─────────────────────┘
+        <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/fc21cf3c-2336-4717-ad0b-e0ef06a85c03" />
 
 Installation
 
